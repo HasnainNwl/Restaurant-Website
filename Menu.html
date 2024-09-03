@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">HR</div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Menu.html">Menu</a></li>
+                    <li><a href="./About_Us.html">About Us</a></li>
+                    <li><a href="./Contact_Us.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <!-- Filter Section -->
+            <div class="menu-filters">
+                <button class="filter-btn" data-category="all">All</button>
+                <button class="filter-btn" data-category="appetizers">Appetizers</button>
+                <button class="filter-btn" data-category="main-course">Main Course</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Items Section -->
+            <div class="menu-items">
+                <!-- Appetizers -->
+                <div class="menu-item" data-category="appetizers">
+                    <img src="./images/fried-spring-rolls.jpg" alt="Spring Rolls">
+                    <h3>Spring Rolls</h3>
+                    <p>Light and crispy rolls filled with vegetables.</p>
+                    <span>$5.99</span>
+                </div>
+                <div class="menu-item" data-category="appetizers">
+                    <img src="./images/bread-garlic.jpg" alt="Garlic Bread">
+                    <h3>Garlic Bread</h3>
+                    <p>Freshly baked bread topped with garlic and herbs.</p>
+                    <span>$4.99</span>
+                </div>
+                <div class="menu-item" data-category="appetizers">
+                    <img src="./images/fried-spring-rolls.jpg" alt="Spring Rolls">
+                    <h3>Spring Rolls</h3>
+                    <p>Light and crispy rolls filled with vegetables.</p>
+                    <span>$5.99</span>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-item" data-category="main-course">
+                    <img src="./images/grilled-salmon.jpg" alt="Grilled Salmon">
+                    <h3>Grilled Salmon</h3>
+                    <p>Served with a side of steamed vegetables and lemon sauce.</p>
+                    <span>$18.99</span>
+                </div>
+                <div class="menu-item" data-category="main-course">
+                    <img src="./images/steak.jpg" alt="Steak Frites">
+                    <h3>Steak Frites</h3>
+                    <p>Juicy steak served with crispy French fries.</p>
+                    <span>$22.99</span>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="./images/chocolate-dessert.jpg" alt="Chocolate Lava Cake">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>A warm, rich chocolate cake with a molten center.</p>
+                    <span>$8.99</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="./images/tiramisu.jpg" alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with layers of coffee-soaked sponge and mascarpone.</p>
+                    <span>$7.99</span>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-item" data-category="beverages">
+                    <img src="./images/lemons.jpg" alt="Lemonade">
+                    <h3>Lemonade</h3>
+                    <p>Freshly squeezed lemons, sugar, and water.</p>
+                    <span>$3.99</span>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <img src="./images/cup-coffee.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold espresso shot.</p>
+                    <span>$2.99</span>
+                </div>
+                <div class="menu-item" data-category="main-course">
+                    <img src="./images/steak.jpg" alt="Steak Frites">
+                    <h3>Steak Frites</h3>
+                    <p>Juicy steak served with crispy French fries.</p>
+                    <span>$22.99</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <img src="./images/tiramisu.jpg" alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Classic Italian dessert with layers of coffee-soaked sponge and mascarpone.</p>
+                    <span>$7.99</span>
+                </div>
+                <div class="menu-item" data-category="beverages">
+                    <img src="./images/cup-coffee.jpg" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold espresso shot.</p>
+                    <span>$2.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Follow Us:</p>
+            <div class="social-links">
+                <a href="#"><img src="./images/facebook.png" alt=""></a>
+                <a href="#"><img src="./images/instagram.png" alt=""></a>
+                <a href="#"><img src="./images/linkedin.png" alt=""></a>
+            </div>
+            <p>&copy; 2024 HR All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
