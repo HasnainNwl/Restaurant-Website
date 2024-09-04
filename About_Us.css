@@ -14,18 +14,20 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding:0 10px;
+    padding: 10px 0;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header nav ul {
@@ -50,10 +52,57 @@ li::after, li::before {
     background: #faf9f9;
     display: block;
     transition: 0.5s;
-  }
+}
+
 li:hover::after, li:hover::before {
     width: 100%;
-  }
+}
+
+/* Hamburger Menu Button for Mobile/Tablet */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media Queries for Mobile and Tablet Screens */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
 
 /* About Us Section */
 .about-us {
@@ -105,6 +154,7 @@ li:hover::after, li:hover::before {
 .staff-member:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
 }
 
 .staff-member {
